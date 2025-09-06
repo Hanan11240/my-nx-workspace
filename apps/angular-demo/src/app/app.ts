@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcome } from './nx-welcome';
+
+import { HeroTest } from '@angular-demo/ui'
 
 @Component({
-  imports: [NxWelcome, RouterModule],
+  imports: [RouterModule,HeroTest],
   selector: 'app-root',
-  templateUrl: './app.html',
+   template: `
+    <lib-hero
+      title="Welcmoe demo"
+      subtitle="Build something amazing today"
+      cta="Get Started"
+    ></lib-hero>
+  `,
   styleUrl: './app.css',
 })
 export class App {
