@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { HeroTest } from '@angular-demo/ui'
+import { HeroTest } from '@angular-demo/ui';
 
 @Component({
-  imports: [RouterModule,HeroTest],
+  imports: [RouterModule, HeroTest],
   selector: 'app-root',
-   template: `
+  template: `
     <lib-hero
-      title="Welcmoe demo"
+      title="Welcome angular-demo"
       subtitle="Build something amazing today"
       cta="Get Started"
     ></lib-hero>
